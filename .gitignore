@@ -7,4 +7,5 @@ __pycache__/
 notebooks/.ipynb_checkpoints
 
 # Configuration you need to set
-config/supertoken.txt
+tokens/supertoken.txt
+tokens/tokens.txt
