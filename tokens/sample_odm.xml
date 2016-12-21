@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:redcap="http://projectredcap.org" xsi:schemaLocation="http://www.cdisc.org/ns/odm/v1.3 schema/odm/ODM1-3-1.xsd" ODMVersion="1.3.1" FileOID="000-00-0000" FileType="Snapshot" Description="hello world - template" AsOfDateTime="2016-12-21T11:01:01" CreationDateTime="2016-12-21T11:01:01" SourceSystem="REDCap" SourceSystemVersion="6.15.9">
+<Study OID="Project.HelloWorldTemplate">
+<GlobalVariables>
+	<StudyName>hello world - template</StudyName>
+	<StudyDescription>This file contains the metadata, events, and data for REDCap project "hello world - template".</StudyDescription>
+	<ProtocolName>hello world - template</ProtocolName>
+	<redcap:RecordAutonumberingEnabled>1</redcap:RecordAutonumberingEnabled>
+	<redcap:CustomRecordLabel></redcap:CustomRecordLabel>
+	<redcap:SecondaryUniqueField></redcap:SecondaryUniqueField>
+	<redcap:SchedulingEnabled>0</redcap:SchedulingEnabled>
+	<redcap:Purpose>0</redcap:Purpose>
+	<redcap:PurposeOther></redcap:PurposeOther>
+	<redcap:ProjectNotes></redcap:ProjectNotes>
+</GlobalVariables>
+<MetaDataVersion OID="Metadata.HelloWorldTemplate_2016-12-21_1101" Name="hello world - template" redcap:RecordIdField="case_number">
+	<FormDef OID="Form.registration" Name="Registration" Repeating="No" redcap:FormName="registration">
+		<ItemGroupRef ItemGroupOID="registration.case_number" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="registration.registration_complete" Mandatory="No"/>
+	</FormDef>
+	<FormDef OID="Form.econsent" Name="econsent" Repeating="No" redcap:FormName="econsent">
+		<ItemGroupRef ItemGroupOID="econsent.consent_date" Mandatory="No"/>
+	</FormDef>
+	<ItemGroupDef OID="registration.case_number" Name="Registration" Repeating="No">
+		<ItemRef ItemOID="case_number" Mandatory="No" redcap:Variable="case_number"/>
+		<ItemRef ItemOID="first_name" Mandatory="No" redcap:Variable="first_name"/>
+		<ItemRef ItemOID="last_name" Mandatory="No" redcap:Variable="last_name"/>
+		<ItemRef ItemOID="brthdat" Mandatory="No" redcap:Variable="brthdat"/>
+		<ItemRef ItemOID="sex" Mandatory="No" redcap:Variable="sex"/>
+		<ItemRef ItemOID="nmg_mrn" Mandatory="No" redcap:Variable="nmg_mrn"/>
+		<ItemRef ItemOID="nmh_mrn" Mandatory="No" redcap:Variable="nmh_mrn"/>
+		<ItemRef ItemOID="ethnic" Mandatory="No" redcap:Variable="ethnic"/>
+		<ItemRef ItemOID="race___1" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___2" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___3" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___4" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___5" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___1" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___2" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___3" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___4" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___5" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___1" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___2" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___3" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___4" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___5" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___1" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___2" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___3" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___4" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___5" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___1" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___2" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___3" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___4" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="race___5" Mandatory="No" redcap:Variable="race"/>
+		<ItemRef ItemOID="dmdat" Mandatory="No" redcap:Variable="dmdat"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="registration.registration_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="registration_complete" Mandatory="No" redcap:Variable="registration_complete"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="econsent.consent_date" Name="econsent" Repeating="No">
+		<ItemRef ItemOID="consent_date" Mandatory="Yes" redcap:Variable="consent_date"/>
+		<ItemRef ItemOID="consent_sig" Mandatory="No" redcap:Variable="consent_sig"/>
+		<ItemRef ItemOID="consent_scan" Mandatory="No" redcap:Variable="consent_scan"/>
+		<ItemRef ItemOID="consent_by" Mandatory="No" redcap:Variable="consent_by"/>
+		<ItemRef ItemOID="econsent_complete" Mandatory="No" redcap:Variable="econsent_complete"/>
+	</ItemGroupDef>
+	<ItemDef OID="case_number" Name="case_number" DataType="text" Length="999" redcap:Variable="case_number" redcap:FieldType="text">
+		<Question><TranslatedText>Case Number</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="first_name" Name="first_name" DataType="text" Length="999" redcap:Variable="first_name" redcap:FieldType="text" redcap:Identifier="y">
+		<Question><TranslatedText>First Name</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="last_name" Name="last_name" DataType="text" Length="999" redcap:Variable="last_name" redcap:FieldType="text" redcap:Identifier="y">
+		<Question><TranslatedText>Last Name</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="brthdat" Name="brthdat" DataType="date" Length="999" redcap:Variable="brthdat" redcap:FieldType="text" redcap:TextValidationType="date_dmy" redcap:FieldNote="Record the date of birth using the DD-MM-YYYY format.">
+		<Question><TranslatedText>What is the subject&#039;s date of birth?</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="sex" Name="sex" DataType="text" Length="2" redcap:Variable="sex" redcap:FieldType="radio" redcap:FieldNote="Record the appropriate sex. Collect the sex or gender, as reported by the subject or caretaker. Select one.">
+		<Question><TranslatedText>What is the sex of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="sex.choices"/>
+	</ItemDef>
+	<ItemDef OID="nmg_mrn" Name="nmg_mrn" DataType="integer" Length="999" redcap:Variable="nmg_mrn" redcap:FieldType="text" redcap:TextValidationType="int" redcap:Identifier="y">
+		<Question><TranslatedText>NMG MRN</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="nmh_mrn" Name="nmh_mrn" DataType="text" Length="999" redcap:Variable="nmh_mrn" redcap:FieldType="text" redcap:Identifier="y">
+		<Question><TranslatedText>NMH MRN</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="ethnic" Name="ethnic" DataType="text" Length="1" redcap:Variable="ethnic" redcap:FieldType="radio" redcap:FieldNote="Study participants should self-report ethnicity, with ethnicity being asked about before race. Select one.">
+		<Question><TranslatedText>What is the ethnicity of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="ethnic.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___1" Name="race___1" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___1.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___2" Name="race___2" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___2.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___3" Name="race___3" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___3.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___4" Name="race___4" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___4.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___5" Name="race___5" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___5.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___1" Name="race___1" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___1.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___2" Name="race___2" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___2.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___3" Name="race___3" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___3.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___4" Name="race___4" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___4.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___5" Name="race___5" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___5.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___1" Name="race___1" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___1.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___2" Name="race___2" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___2.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___3" Name="race___3" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___3.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___4" Name="race___4" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___4.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___5" Name="race___5" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___5.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___1" Name="race___1" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___1.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___2" Name="race___2" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___2.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___3" Name="race___3" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___3.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___4" Name="race___4" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___4.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___5" Name="race___5" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___5.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___1" Name="race___1" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___1.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___2" Name="race___2" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___2.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___3" Name="race___3" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___3.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___4" Name="race___4" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___4.choices"/>
+	</ItemDef>
+	<ItemDef OID="race___5" Name="race___5" DataType="boolean" Length="1" redcap:Variable="race" redcap:FieldType="checkbox" redcap:FieldNote="Study participants should self-report race, with race being asked about after ethnicity. Check all that apply.">
+		<Question><TranslatedText>What is the race of the subject?</TranslatedText></Question>
+		<CodeListRef CodeListOID="race___5.choices"/>
+	</ItemDef>
+	<ItemDef OID="dmdat" Name="dmdat" DataType="date" Length="999" redcap:Variable="dmdat" redcap:FieldType="text" redcap:TextValidationType="date_dmy" redcap:FieldNote="Record the date the demographics data were collected using the DD-MM-YYYY format.">
+		<Question><TranslatedText>What is the date of collection?</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="registration_complete" Name="registration_complete" DataType="text" Length="1" redcap:Variable="registration_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="registration_complete.choices"/>
+	</ItemDef>
+	<ItemDef OID="consent_date" Name="consent_date" DataType="date" Length="999" redcap:Variable="consent_date" redcap:FieldType="text" redcap:TextValidationType="date_ymd" redcap:RequiredField="y">
+		<Question><TranslatedText>Consent Date</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="consent_sig" Name="consent_sig" DataType="text" Length="999" redcap:Variable="consent_sig" redcap:FieldType="file" redcap:TextValidationType="signature">
+		<Question><TranslatedText>Consent signature</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="consent_scan" Name="consent_scan" DataType="text" Length="999" redcap:Variable="consent_scan" redcap:FieldType="file">
+		<Question><TranslatedText>Consent scan</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="consent_by" Name="consent_by" DataType="text" Length="999" redcap:Variable="consent_by" redcap:FieldType="file" redcap:TextValidationType="signature" redcap:FieldNote="Name of study personnel obtaining signature">
+		<Question><TranslatedText>Consented by</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="econsent_complete" Name="econsent_complete" DataType="text" Length="1" redcap:Variable="econsent_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="econsent_complete.choices"/>
+	</ItemDef>
+	<CodeList OID="sex.choices" Name="sex" DataType="text" redcap:Variable="sex">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Female</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Male</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>Undifferentiated</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="99"><Decode><TranslatedText>Unknown</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="ethnic.choices" Name="ethnic" DataType="text" redcap:Variable="ethnic">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Hispanic or Latino</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Not Hispanic or Latino</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___1.choices" Name="race___1" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___2.choices" Name="race___2" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___3.choices" Name="race___3" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___4.choices" Name="race___4" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___5.choices" Name="race___5" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___1.choices" Name="race___1" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___2.choices" Name="race___2" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___3.choices" Name="race___3" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___4.choices" Name="race___4" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___5.choices" Name="race___5" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___1.choices" Name="race___1" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___2.choices" Name="race___2" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___3.choices" Name="race___3" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___4.choices" Name="race___4" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___5.choices" Name="race___5" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___1.choices" Name="race___1" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___2.choices" Name="race___2" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___3.choices" Name="race___3" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___4.choices" Name="race___4" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___5.choices" Name="race___5" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___1.choices" Name="race___1" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___2.choices" Name="race___2" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___3.choices" Name="race___3" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___4.choices" Name="race___4" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="race___5.choices" Name="race___5" DataType="boolean" redcap:Variable="race" redcap:CheckboxChoices="1, Black or African American | 2, American Indian or Alaska Native | 3, Asian | 4, Native Hawaiian or Other Pacific Islander | 5, White">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="registration_complete.choices" Name="registration_complete" DataType="text" redcap:Variable="registration_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="econsent_complete.choices" Name="econsent_complete" DataType="text" redcap:Variable="econsent_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+</MetaDataVersion>
+</Study>
+<ClinicalData StudyOID="Project.HelloWorldTemplate" MetaDataVersionOID="Metadata.HelloWorldTemplate_2016-12-21_1101">
+</ClinicalData>
+</ODM>
